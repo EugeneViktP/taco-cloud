@@ -1,5 +1,6 @@
 package sia.taco_cloud.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -11,7 +12,7 @@ import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
 
 @Data
-public class TacoOrder {
+public class TacoOrder implements Serializable {
 
     private static final long serialVersionUID = 1L;
     private Long id;
