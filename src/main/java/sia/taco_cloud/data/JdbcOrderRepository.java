@@ -40,7 +40,7 @@ public class JdbcOrderRepository implements OrderRepository {
                                 "values (?, ?, ?, ?, ?, ?, ?, ?, ?)",
                         Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
                         Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
-                        Types.VARCHAR, Types.VARCHAR, Types.VARCHAR
+                        Types.VARCHAR, Types.VARCHAR, Types.TIMESTAMP
                 );
         pscf.setReturnGeneratedKeys(true);
 
